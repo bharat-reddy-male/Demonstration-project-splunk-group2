@@ -22,8 +22,8 @@ Sub topic
 
 Sub Topics
 
-  1. Create Dashboards.
-  2. Analysing Reports.
+  1. Create Datasets
+  2. Filter By category
 -
 -
 -
@@ -38,6 +38,9 @@ Sub Topics
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 Sub Topics
+
+  1. Create Dashboards.
+  2. Analysing Reports.
 -
 -
 -
