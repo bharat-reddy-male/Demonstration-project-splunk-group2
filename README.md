@@ -70,7 +70,8 @@ Sub Topics
 ### Chinmayi Ambati
 ![Chinmayi Ambati](https://raw.githubusercontent.com/bharat-reddy-male/Demonstration-project-splunk-group2/main/Assets/Chinmayi.jpg)
 -
--
+Sub Topics
+1. Introduction to Splunk interface
 -
 -
 -
