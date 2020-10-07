@@ -15,6 +15,7 @@ Sub topic - System performance using splunk
 -
 
 ### Bhavya Deepthi
+![Bhavya](./Assets/deepu.jpg "Bhavya")
 
 -
 -
