@@ -56,7 +56,7 @@ Sub Topics
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
 Sub Topics
-1. Universal indexing
+1. Transforming commands
 -
 -
 -
