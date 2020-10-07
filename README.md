@@ -7,6 +7,7 @@
 Sub topic 
 
   1. System performance using splunk.
+  2. Search operations.
 -
 -
 -
@@ -21,7 +22,7 @@ Sub topic
 
 Sub Topics
 
-  1. Create Dashboards 
+  1. Create Dashboards.
   2. Analysing Reports.
 -
 -
