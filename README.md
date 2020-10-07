@@ -1,7 +1,7 @@
 # Demonstration-project-splunk-group2
 
 
-### Bharat Reddy
+### Bharat Reddy Male
 ![Bharat](./Assets/bharat.jpeg "Bharat")
 
 Sub topic 
@@ -17,7 +17,7 @@ Sub topic
 -
 -
 
-### Bhavya Deepthi
+### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
 
 Sub Topics
@@ -35,7 +35,7 @@ Sub Topics
 -
 -
 
-### Priyanka 
+### Priyanka Bodapati
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 Sub Topics
@@ -52,12 +52,7 @@ Sub Topics
 -
 -
 -
-### Chetan
-![Chetan](./Assets/dp.jpeg "Chetan")
-
-Sub Topics
-
-1. Universal indexing 
+### Chetan Kudaravalli
 -
 -
 -
@@ -65,7 +60,18 @@ Sub Topics
 -
 -
 -
-
+-
+-
+-
+### Chinmayi Ambati
+-
+-
+-
+-
+-
+-
+-
+-
 
 ### References: 
 
