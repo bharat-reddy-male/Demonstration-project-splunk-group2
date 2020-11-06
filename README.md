@@ -104,13 +104,14 @@ Sub Topics
    
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/2.JPG?raw=true)
 
-6. Click the Next button. From the Input Settings step, enter web_application as the Host field value and click the Review button.
+6. Click the Next button. 
+7. From the Input Settings step, enter web_application as the Host field value and click the Review button.
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/3.JPG?raw=true)
 
-7. You will be taken to the Review step. Make sure your settings match what is shown below and click the Submit button.
+8. You will be taken to the Review step. Make sure your settings match what is shown below and click "Submit".
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/4.JPG?raw=true)
 
-8. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
+9. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
 
 ### To Search data
 
@@ -132,6 +133,7 @@ Sub Topics
 2. This returns all events where a purchase action was taken.
 3. Examine the fields towards left of the events
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/8.JPG?raw=true)
+
 4. Select on any field and add it to your search bar to make the searching more efficient.
 
 ### References: 
