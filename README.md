@@ -25,7 +25,22 @@ Sub Topics
  1. Create Dashboards.
  2. Analysing Reports.
   
--
+## Prerequisites
+First step required to work on Splunk is to download the free trial version of splunk software on the local machine depending on the type of OS. I am using Windows 64 bit. And also there are two types of splunk software based on licencing called as " Splunk Cloud" and " Splunk Enterprise". I worked on Splunk Enterprise as its licence lasts for 60 days. So this can be downloaded from [Splunk Website](https://www.splunk.com/).
+
+Another basic necessity is to have the data required to perform the demo. The data can be found at [Data files](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/tree/main/Bhavya).
+
+## Process
+
+### Analyze the Reports
+
+### Create Dashboards
+
+
+## References
+The following link [External Link](https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial) is the only reference I utilized to learn and perform the demo.
+
+
 -
 -
 -
