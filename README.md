@@ -117,7 +117,7 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
-## Sub Topics
+## Sub Topic
 ### Transforming commands
 
 ## Prerequisites
@@ -131,7 +131,9 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 2. when you go click on search and reporting, you will get a search bar for using transforming commands.</br>
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/search.PNG)
 
-## commands
+3. My Video Link for Splunk Demo: 
+
+## Commands
 
 1.Command for system administrator to get internal data in splunk server.</br>
 ``` index="_internal" sourcetype=splunkd ```</br>
