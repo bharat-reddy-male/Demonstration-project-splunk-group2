@@ -54,6 +54,13 @@ The basic idea is when we search the data, it can be saved in the form of report
 5. List of Reports
 ![](Bhavya/Images/Reports_list.JPG)
 
+#### Commands Used to create the reports:
+1. In the command ```sourcetype=access_* |stats values(price) AS Price BY productName |rename productName AS "Product Name"``` source type specifies which type of file to access for searching, Piple character(|) takes the result of left value as input to the right value, stats is a transform command that displays output in statistics and visualization format, AS is used as alias, rename is used to rename the column names. On a whole the above command displays the list of product names and prices in the input data file.
+
+2. Other command used for practice is 
+```sourcetype=access_* status=200 action=purchase [search sourcetype=access_* status=200 action=purchase | top limit=1 clientip | table clientip] | stats count AS "Total Purchased", dc(productId) AS "Total Products", values(productId) AS "Product IDs" BY clientip | rename clientip AS "VIP Customer"```. This command utilizes the sub search process using []. This command displays the VIP Customer Ip address along with count of purchases made, count of different products bought and product Id's.
+
+
 ### Create Dashboards
 
 
