@@ -100,6 +100,14 @@ Go to the visualization tab and select a visual format or your wish. A pie chart
 
 This way you can perform search operations on your data and visualize it as per your needs for a better understanding.  
 
+##### Demo Video:
+A video with step by step procedure of this section is availabe at [https://youtu.be/w6UV-Ms0QKY](https://youtu.be/w6UV-Ms0QKY)
+
+##### References:
+
+1. Download splunk -> [https://www.splunk.com/](https://www.splunk.com/)
+2. Data used in this section -> [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
+
 
 ### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
