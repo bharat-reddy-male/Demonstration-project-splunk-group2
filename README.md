@@ -14,6 +14,45 @@ Sub topic
   1. This is a windows based demo and requires splunk tool to be installed on you local windows machine. 
 
   2. Getting the tutorial data - The data is availabe at in the *Download the tutorial data files* section at [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
+  
+  #### System performance using splunk:
+
+  Splunk helps us to monitor multiple servers at a time to manage complex data like
+
+  1. Events
+  2. Errors
+  3. Application logs 
+  4. Security logs
+  5. CPU performance
+  6. Memory Usage and many more..
+
+  Now lets get started with how to setup a local system in splunk for monitoring.
+
+  ##### Steps: 
+  1. Login to the splunk application and navigate to the ```Data Inputs``` link in the settings section.
+  <img src = "./Assets/bharat/dataInput.jpg" height="200" width="400" alt="dataInput"/>
+
+  2. Select the *Files and Directories* as the type.
+  <img src = "./Assets/bharat/filesNDir.jpg" height="100" width="400" alt="files and directories"/>
+
+  3. Create a new Local File and Directory and select *Local windows host monitoring* in the left pane fill the required fields.
+  ```Collection name: Provide a unique name,```
+  ```Event Types: Select the event types you want to monitor,```
+  ```Interval: Time in seconds```
+<img src = "./Assets/bharat/localHost.jpg" height="200" width="400" alt="data to be provided"/>
+
+4. Select the app context based on the task you are performing. 
+
+5. Review and submit. Once done you will be provided with this screen on success.
+<img src = "./Assets/bharat/review.jpg" height="200" width="400" alt="Success Screen"/>
+
+
+
+
+  
+    
+
+
 
 
 -
