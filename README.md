@@ -41,7 +41,8 @@ Sub Topics
 Sub Topics
 # Dataset Creation
 1. The first screen apperas after opening the splunk is provided below.
-![](Priyanka1.jpg)
+![](Priyanka1.PNG)
+
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
