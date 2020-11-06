@@ -32,7 +32,22 @@ Another basic necessity is to have the data required to perform the demo. The da
 
 ## Process
 
+### Step by Step Process
+1. Install the Splunk Enterprise after downloading.
+2. Launch Splunk Web
+3. Navigate to splunk web(Home Page)
+4. Upload the data(Data is related to Online Store Buttercup games )
+5. Search the Data required in the search bar
+6. Generate Report
+7. Add the reports to the Dashboard
+
 ### Analyze the Reports
+The basic idea is when we search the data, it can be saved in the form of reports for further reference. So, my data is related to the logs of buttercup games store which has information like client Ip addresses, product id's, timestamp, URL, URI, category of products, product actions etc.
+1. Launch Screen with Search App and Menu Bar
+2. Search Bar Screen
+3. Seach query with Results in Statistics
+4. Results in Visualization format
+5. List of Reports
 
 ### Create Dashboards
 
