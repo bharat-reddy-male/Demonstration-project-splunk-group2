@@ -197,10 +197,10 @@ Sub Topics
 -
 ### Chinmayi Ambati
 ![Chinmayi Ambati](https://raw.githubusercontent.com/bharat-reddy-male/Demonstration-project-splunk-group2/main/Assets/Chinmayi.jpg)
--
+
 ## Sub Topics
 1. Introduction to Splunk interface
--
+
 ## Prerequisites to start working with Splunk
 1. Log in to the [splunk website](https://www.splunk.com/)
 2. Head to https://www.splunk.com/en_us/download/splunk-enterprise.html. This will download the splunk enterprise into your local system
@@ -208,7 +208,7 @@ Sub Topics
 
 ## Process
 
-### To inject data
+## To inject data
 
 1. Once you are logged in as an administrator, you are taken to the home page. Click on the "Add Data" icon.
 2. From the add data page, click on the upload button
@@ -229,7 +229,7 @@ Sub Topics
 
 9. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
 
-### To Search data
+## To Search data
 
 1. Login as a power user using the default credentials added at the time of installation.
 2. Navigate to the search view and in the search bar, type the search: error OR fail*. Make sure to choose the time range to be all time.
@@ -243,7 +243,7 @@ Sub Topics
 6. Click add to search.
 7. Look at the timeline to see if there are any spikes in password failures for this user.
 
-### To use fields
+## To use fields
 
 1. Go to the search bar and search for ``` index=main sourcetype=access_combined_wcookie action=purchase ``` for All time.
 2. This returns all events where a purchase action was taken.
@@ -251,6 +251,16 @@ Sub Topics
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/8.JPG?raw=true)
 
 4. Select on any field and add it to your search bar to make the searching more efficient.
+
+## Demo Link
+
+https://use.vg/NFWRw3
+
+## References
+
+1. Install Splunk Enterprise at https://www.splunk.com/en_us/download/splunk-enterprise.html
+2. Sample data can be downloaded from http://splk.it/f1data
+
 
 ### References: 
 
