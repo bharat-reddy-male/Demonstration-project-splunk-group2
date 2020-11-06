@@ -39,19 +39,9 @@ Sub Topics
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 Sub Topics
-1. Create Datasets
-2. Filter By category
- 
--
--
--
--
--
--
--
--
--
--
+# Dataset Creation
+1. The first screen apperas after opening the splunk is provided below.
+![](Priyanka1.jpg)
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
