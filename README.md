@@ -39,7 +39,7 @@ Sub Topics
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 ### Dataset Creation
-1. The first screen apperas after opening the splunk is provided below.
+1. The first screen apperas after opening the splunk is provided below.<br>
 ![](Priyanka1.PNG)
 2. Click on "Search & Reporting". Where you can see all options
 ![](Priyanka2.PNG)
