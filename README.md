@@ -8,6 +8,7 @@ Sub topic
 
   1. System performance using splunk.
   2. Search operations.
+<<<<<<< HEAD
 
   #### Pre-requisites:
 
@@ -108,6 +109,16 @@ A video with step by step procedure of this section is availabe at [https://yout
 1. Download splunk -> [https://www.splunk.com/](https://www.splunk.com/)
 2. Data used in this section -> [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
 
+=======
+-
+-
+-
+-
+-
+-
+-
+-
+>>>>>>> 10e11bd56077ade31fcf73f500e89a9b030b7a68
 
 ### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
@@ -173,7 +184,7 @@ Another way to add panel is while searching and saving immediately like below.
 #### Command: 
 ```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search coomand used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
 
-### DEMO: The following is the link to the demo video: [Demo](Bhavya/SplunkDemo_Bhavya.mp4)
+
 ## References
 The following link [External Link](https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial) is the only reference I utilized to learn and perform the demo.
 
@@ -209,24 +220,56 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
-Sub Topics
-1. Transforming commands
--
--
--
--
--
--
--
--
--
--
+## Sub Topic
+### Transforming commands
+
+## Prerequisites
+* Log in to the [splunk website](https://www.splunk.com/) and then to https://www.splunk.com/en_us/download/splunk-enterprise.html to download the splunk enterprise and then log in to the splunk enterprise using the credentials provided during installation.
+
+## Process
+
+1. when you are logged in as an administrator, you are taken to the home page shown as below</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/homepage.PNG)
+
+2. when you go click on search and reporting, you will get a search bar for using transforming commands.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/search.PNG)
+
+3. My Video Link for Splunk Demo: 
+
+## Commands
+
+1.Command for system administrator to get internal data in splunk server.</br>
+``` index="_internal" sourcetype=splunkd ```</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/data.PNG)</br>
+2. command for Chart transforming command</br>
+``` index="_internal" sourcetype=splunkd | chart count by max_size_kb ``` and below is the screenshot for visualization of data.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/vis.PNG)</br>
+3. command for timechart transforming command ``` index="_internal" sourcetype=splunkd | timechart count by max_size_kb ```</br>
+4. Command for stats transforming command </br>``` index="_internal" sourcetype=splunkd | stats count ``` and below is the screenshot for visualization of data.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/stat.PNG)
+* Command for rare transforming command``` index="_internal" sourcetype=splunkd | rare max_size_kb ```</br>
+* Command for top transforming command``` index="_internal" sourcetype=splunkd | top max_size_kb ```
+
+## References
+* [splunk Demo](https://docs.splunk.com/Splexicon:Transformingcommand)
+* [Transforming commands](https://www.youtube.com/watch?v=wR_FdzfoFFA)
+
+
+
+
+
+
+
+
+
+
+
 ### Chinmayi Ambati
 ![Chinmayi Ambati](https://raw.githubusercontent.com/bharat-reddy-male/Demonstration-project-splunk-group2/main/Assets/Chinmayi.jpg)
-
+-
 ## Sub Topics
 1. Introduction to Splunk interface
-
+-
 ## Prerequisites to start working with Splunk
 1. Log in to the [splunk website](https://www.splunk.com/)
 2. Head to https://www.splunk.com/en_us/download/splunk-enterprise.html. This will download the splunk enterprise into your local system
@@ -234,7 +277,7 @@ Sub Topics
 
 ## Process
 
-## To inject data
+### To inject data
 
 1. Once you are logged in as an administrator, you are taken to the home page. Click on the "Add Data" icon.
 2. From the add data page, click on the upload button
@@ -255,7 +298,7 @@ Sub Topics
 
 9. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
 
-## To Search data
+### To Search data
 
 1. Login as a power user using the default credentials added at the time of installation.
 2. Navigate to the search view and in the search bar, type the search: error OR fail*. Make sure to choose the time range to be all time.
@@ -269,7 +312,7 @@ Sub Topics
 6. Click add to search.
 7. Look at the timeline to see if there are any spikes in password failures for this user.
 
-## To use fields
+### To use fields
 
 1. Go to the search bar and search for ``` index=main sourcetype=access_combined_wcookie action=purchase ``` for All time.
 2. This returns all events where a purchase action was taken.
@@ -277,16 +320,6 @@ Sub Topics
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/8.JPG?raw=true)
 
 4. Select on any field and add it to your search bar to make the searching more efficient.
-
-## Demo Link
-
-https://use.vg/NFWRw3
-
-## References
-
-1. Install Splunk Enterprise at https://www.splunk.com/en_us/download/splunk-enterprise.html
-2. Sample data can be downloaded from http://splk.it/f1data
-
 
 ### References: 
 
