@@ -94,9 +94,46 @@ Sub Topics
 
 ### To inject data
 
-### To search data
+1. Once you are logged in as an administrator, you are taken to the home page. Click on the "Add Data" icon.
+2. From the add data page, click on the upload button
+3. You will be taken to the Select Source step. Click the Select File button and choose the access_30Day.log file that you downloaded earlier (from the sample data).
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/1.JPG?raw=true)
 
-### Using fields to refine searches
+4. Once the file is uploaded, click the Next button.
+5. On the Set Source Type step, you will see that Splunk automatically set the source type correctly as access_combined_wcookie. 
+   
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/2.JPG?raw=true)
+
+6. Click the Next button. From the Input Settings step, enter web_application as the Host field value and click the Review button.
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/3.JPG?raw=true)
+
+7. You will be taken to the Review step. Make sure your settings match what is shown below and click the Submit button.
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/4.JPG?raw=true)
+
+8. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
+
+### To Search data
+
+1. Login as a power user using the default credentials added at the time of installation.
+2. Navigate to the search view and in the search bar, type the search: error OR fail*. Make sure to choose the time range to be all time.
+3. Notice at the bottom of each event we see values for host, source and scourcetype.
+4. Look at the host values to see we are getting events for both our web_application and web_server hosts.
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/6.JPG?raw=true)
+
+5. Click one of the user names in the search results. Note that when you click a user name, a menu of options appears:
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/7.JPG?raw=true)
+
+6. Click add to search.
+7. Look at the timeline to see if there are any spikes in password failures for this user.
+
+### To use fields
+
+1. Go to the search bar and search for ``` index=main sourcetype=access_combined_wcookie action=purchase ``` for All time.
+2. This returns all events where a purchase action was taken.
+3. Examine the fields towards left of the events
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/8.JPG?raw=true)
+4. Select on any field and add it to your search bar to make the searching more efficient.
+
 ### References: 
 
 Subtopics found at  -->[Splunk - Demo](https://www.splunk.com/en_us/resources/videos/splunk-web-demo.html)
