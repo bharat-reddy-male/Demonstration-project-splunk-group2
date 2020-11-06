@@ -72,6 +72,17 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 ### Dataset Creation
+
+#### Prerequisites
+1. Download Splunk at https://www.splunk.com/en_us/download/splunk-enterprise.html.
+
+#### Process
+1. Install Splunk.
+2. Open splunk and create the table View.
+3. Add thr indexes, sources and fields.
+4. Check the status of fields
+
+#### Screenshots to follow the process
 1. The first screen apperas after opening the splunk is provided below.
 ![](Priyanka1.PNG)
 2. Click on "Search & Reporting". Where you can see all options
