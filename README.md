@@ -44,10 +44,15 @@ Another basic necessity is to have the data required to perform the demo. The da
 ### Analyze the Reports
 The basic idea is when we search the data, it can be saved in the form of reports for further reference. So, my data is related to the logs of buttercup games store which has information like client Ip addresses, product id's, timestamp, URL, URI, category of products, product actions etc.
 1. Launch Screen with Search App and Menu Bar
+![](Bhavya/Images/Home Screen.JPG)
 2. Search Bar Screen
+![](Bhavya/Images/SearchBar.JPG)
 3. Seach query with Results in Statistics
+![](Bhavya/Images/Search Result.JPG)
 4. Results in Visualization format
+![](Bhavya/Images/Search_Visualization.JPG)
 5. List of Reports
+![](Bhavya/Images/Reports_list.JPG)
 
 ### Create Dashboards
 
