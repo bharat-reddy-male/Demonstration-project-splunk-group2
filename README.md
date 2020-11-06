@@ -256,6 +256,12 @@ Sub Topics
 
 https://use.vg/NFWRw3
 
+## References
+
+1. Install Splunk Enterprise at https://www.splunk.com/en_us/download/splunk-enterprise.html
+2. Sample data can be downloaded from http://splk.it/f1data
+
+
 ### References: 
 
 Subtopics found at  -->[Splunk - Demo](https://www.splunk.com/en_us/resources/videos/splunk-web-demo.html)
