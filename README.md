@@ -30,24 +30,43 @@ Sub topic
 
   ##### Steps: 
   1. Login to the splunk application and navigate to the ```Data Inputs``` link in the settings section.
-  <img src = "./Assets/bharat/dataInput.jpg" height="200" width="400" alt="dataInput"/>
+  ![Data Input](./Assets/bharat/dataInput.jpg "Data Input")
 
   2. Select the *Files and Directories* as the type.
-  <img src = "./Assets/bharat/filesNDir.jpg" height="100" width="400" alt="files and directories"/>
+  ![Files And Directories](./Assets/bharat/filesNDir.jpg "Files and directories")
 
   3. Create a new Local File and Directory and select *Local windows host monitoring* in the left pane fill the required fields.
   ```Collection name: Provide a unique name,```
   ```Event Types: Select the event types you want to monitor,```
   ```Interval: Time in seconds```
-<img src = "./Assets/bharat/localHost.jpg" height="200" width="400" alt="data to be provided"/>
+![Local Windows host monitoring](./Assets/bharat/localHost.jpg "Local windows host monitoring")
 
 4. Select the app context based on the task you are performing. 
 
 5. Review and submit. Once done you will be provided with this screen on success.
-<img src = "./Assets/bharat/review.jpg" height="200" width="400" alt="Success Screen"/>
+![Review](./Assets/bharat/review.jpg "Review")
+
+##### Viewing our logs 
+
+- Raw format:
+
+  Click on the start searching button and the app takes you to search window where you can run queries on the data.
+
+  A sample query for getting the all the data is given below.
+
+  ```source="localhost" host="nw42694" sourcetype="WinHostMon"```
+
+  This query can be run on multiple time stamps like data within a week, day, hour etc.
+
+  ![Search](./Assets/bharat/search.jpg)
+
+- Dashboard of the system:
+
+    Splunk provides a pre built dashboard for the system performance monitoring. This is availabe in the home screen of the application.
+    ![Dashboard](./Assets/bharat/dashboard.jpg)
 
 
-
+#### Search Operations:
 
   
     
