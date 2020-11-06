@@ -62,6 +62,23 @@ The basic idea is when we search the data, it can be saved in the form of report
 
 
 ### Create Dashboards
+Dashboards are views that are made up of panels. The panels can contain modules such as search boxes, fields, charts, tables, and lists. Dashboard panels are usually connected to reports.
+After creating a search visualization or saving a report, we can add it to a new or existing dashboard. There is also a Dashboard Editor that we can use to create and edit dashboards. The Dashboard Editor is useful when we have a set of saved reports that we want to quickly add to a dashboard.
+1. Click on the Dashboard menu in the Home Page and Create a New Dashboard by clciking on the create button by providing a title and description.
+2. In the Edit button click on Edit Panel option from the menu
+![](Bhavya/Images/Dashboard.JPG)
+3. Click on Add Panel option and select the panel from already generated reports.
+![](Bhavya/Images/AddPanel.JPG)
+4. After adding the panel, the screen looks like below.
+![](Bhavya/Images/panelAdded.JPG)
+5. Click on save to save the panel to the Dashboard.
+![](Bhavya/Images/AfterPanelSave.JPG)
+
+Another way to add panel is while searching and saving immediately like below.
+![](Bhavya/Images/Add_dashboard Panel.JPG)
+
+#### Command: 
+```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search coomand used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
 
 
 ## References
@@ -72,17 +89,6 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
 ### Dataset Creation
-
-#### Prerequisites
-1. Download Splunk at https://www.splunk.com/en_us/download/splunk-enterprise.html.
-
-#### Process
-1. Install Splunk.
-2. Open splunk and create the table View.
-3. Add thr indexes, sources and fields.
-4. Check the status of fields
-
-#### Screenshots to follow the process
 1. The first screen apperas after opening the splunk is provided below.
 ![](Priyanka1.PNG)
 2. Click on "Search & Reporting". Where you can see all options
