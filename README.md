@@ -8,98 +8,14 @@ Sub topic
 
   1. System performance using splunk.
   2. Search operations.
-
-  #### Pre-requisites:
-
-  1. This is a windows based demo and requires splunk tool to be installed on you local windows machine. 
-
-  2. Getting the tutorial data - The data is availabe at in the *Download the tutorial data files* section at [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
-  
-  #### System performance using splunk:
-
-  Splunk helps us to monitor multiple servers at a time to manage complex data like
-
-  1. Events
-  2. Errors
-  3. Application logs 
-  4. Security logs
-  5. CPU performance
-  6. Memory Usage and many more..
-
-  Now lets get started with how to setup a local system in splunk for monitoring.
-
-  ##### Steps: 
-  1. Login to the splunk application and navigate to the ```Data Inputs``` link in the settings section.
-  ![Data Input](./Assets/bharat/dataInput.JPG "Data Input")
-
-  2. Select the *Files and Directories* as the type.
-  ![Files And Directories](./Assets/bharat/filesNDir.JPG "Files and directories")
-
-  3. Create a new Local File and Directory and select *Local windows host monitoring* in the left pane fill the required fields.
-  ```Collection name: Provide a unique name,```
-  ```Event Types: Select the event types you want to monitor,```
-  ```Interval: Time in seconds```
-![Local Windows host monitoring](./Assets/bharat/localHost.JPG "Local windows host monitoring")
-
-4. Select the app context based on the task you are performing. 
-
-5. Review and submit. Once done you will be provided with this screen on success.
-![Review](./Assets/bharat/review.JPG "Review")
-
-##### Viewing our logs 
-
-- Raw format:
-
-  Click on the start searching button and the app takes you to search window where you can run queries on the data.
-
-  A sample query for getting the all the data is given below.
-
-  ```source="localhost" host="nw42694" sourcetype="WinHostMon"```
-
-  This query can be run on multiple time stamps like data within a week, day, hour etc.
-
-  ![Search](./Assets/bharat/search.JPG)
-
-- Dashboard of the system:
-
-    Splunk provides a pre built dashboard for the system performance monitoring. This is availabe in the home screen of the application.
-    ![Dashboard](./Assets/bharat/dashboard.JPG)
-    
-
-#### Search Operations:
-
-Firstly lets add some data into splunk for performing search operations. 
-
-The data which splunk provided earlier in this tutorial. To add the data into splunk,
-1. Go to the add data link and select upload files.
-2. Select the tutorials.zip file from the file explorer and click next.
-
-3. In the next window, select the host option to *Regular expression on path* and give the regular expression as ```\\(.*)\/```. 
-
-![Reqular expression](./Assets/bharat/reg.JPG)
-
-4. Review and submit.
-
-Once the file is uploaded, Navigate to the home page and click on *Search & Reporting*
-
-##### Searching using the search tab
-
-Lets search for the logs with buttercutgames that failed. To do so enter the below query in the search field and select a timestamp of your wish and click on search icon.
-
-```buttercupgames (error OR fail* OR severe)```
-
-![buttercup search](./Assets/bharat/searchBC.JPG)
-
-Now lets try to visualize some data from the same dataset with a different query. Enter the query below and select a timestamp of your wish and click on search.
-
-```sourcetype=access_* status=200 action=purchase | top categoryId```
-
-Go to the visualization tab and select a visual format or your wish. A pie chart and a bar graph of the result is given below.
-![Pie chart](./Assets/bharat/pie.JPG)
-![Bar graph](./Assets/bharat/bar.JPG)
-
-This way you can perform search operations on your data and visualize it as per your needs for a better understanding.  
-
+-
+-
+-
+-
+-
+-
+-
+-
 
 ### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
@@ -165,7 +81,7 @@ Another way to add panel is while searching and saving immediately like below.
 #### Command: 
 ```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search coomand used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
 
-### DEMO: The following is the link to the demo video: [Demo](Bhavya/SplunkDemo_Bhavya.mp4)
+
 ## References
 The following link [External Link](https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial) is the only reference I utilized to learn and perform the demo.
 
@@ -201,24 +117,54 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
-Sub Topics
-1. Transforming commands
--
--
--
--
--
--
--
--
--
--
+## Sub Topics
+### Transforming commands
+
+## Prerequisites
+* Log in to the [splunk website](https://www.splunk.com/) and then to https://www.splunk.com/en_us/download/splunk-enterprise.html to download the splunk enterprise and then log in to the splunk enterprise using the credentials provided during installation.
+
+## Process
+
+1. when you are logged in as an administrator, you are taken to the home page shown as below</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/homepage.PNG)
+
+2. when you go click on search and reporting, you will get a search bar for using transforming commands.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/search.PNG)
+
+## commands
+
+1.Command for system administrator to get internal data in splunk server.</br>
+``` index="_internal" sourcetype=splunkd ```</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/data.PNG)</br>
+2. command for Chart transforming command</br>
+``` index="_internal" sourcetype=splunkd | chart count by max_size_kb ``` and below is the screenshot for visualization of data.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/vis.PNG)</br>
+3. command for timechart transforming command ``` index="_internal" sourcetype=splunkd | timechart count by max_size_kb ```</br>
+4. Command for stats transforming command </br>``` index="_internal" sourcetype=splunkd | stats count ``` and below is the screenshot for visualization of data.</br>
+![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/stat.PNG)
+* Command for rare transforming command``` index="_internal" sourcetype=splunkd | rare max_size_kb ```</br>
+* Command for top transforming command``` index="_internal" sourcetype=splunkd | top max_size_kb ```
+
+## References
+* [splunk Demo](https://docs.splunk.com/Splexicon:Transformingcommand)
+* [Transforming commands](https://www.youtube.com/watch?v=wR_FdzfoFFA)
+
+
+
+
+
+
+
+
+
+
+
 ### Chinmayi Ambati
 ![Chinmayi Ambati](https://raw.githubusercontent.com/bharat-reddy-male/Demonstration-project-splunk-group2/main/Assets/Chinmayi.jpg)
-
+-
 ## Sub Topics
 1. Introduction to Splunk interface
-
+-
 ## Prerequisites to start working with Splunk
 1. Log in to the [splunk website](https://www.splunk.com/)
 2. Head to https://www.splunk.com/en_us/download/splunk-enterprise.html. This will download the splunk enterprise into your local system
@@ -226,7 +172,7 @@ Sub Topics
 
 ## Process
 
-## To inject data
+### To inject data
 
 1. Once you are logged in as an administrator, you are taken to the home page. Click on the "Add Data" icon.
 2. From the add data page, click on the upload button
@@ -247,7 +193,7 @@ Sub Topics
 
 9. Splunk will process the file. When completed, a dialog will appear telling you the file has been successfully uploaded.
 
-## To Search data
+### To Search data
 
 1. Login as a power user using the default credentials added at the time of installation.
 2. Navigate to the search view and in the search bar, type the search: error OR fail*. Make sure to choose the time range to be all time.
@@ -261,7 +207,7 @@ Sub Topics
 6. Click add to search.
 7. Look at the timeline to see if there are any spikes in password failures for this user.
 
-## To use fields
+### To use fields
 
 1. Go to the search bar and search for ``` index=main sourcetype=access_combined_wcookie action=purchase ``` for All time.
 2. This returns all events where a purchase action was taken.
@@ -269,16 +215,6 @@ Sub Topics
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/Chinmayi_assests/8.JPG?raw=true)
 
 4. Select on any field and add it to your search bar to make the searching more efficient.
-
-## Demo Link
-
-https://use.vg/NFWRw3
-
-## References
-
-1. Install Splunk Enterprise at https://www.splunk.com/en_us/download/splunk-enterprise.html
-2. Sample data can be downloaded from http://splk.it/f1data
-
 
 ### References: 
 
