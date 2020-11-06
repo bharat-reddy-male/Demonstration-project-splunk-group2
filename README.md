@@ -38,11 +38,15 @@ Sub Topics
 ### Priyanka Bodapati
 ![Priyanka Bodapati](./Assets/Priyanka.jpg "Priyanka")
 
-Sub Topics
-# Dataset Creation
+### Dataset Creation
 1. The first screen apperas after opening the splunk is provided below.
 ![](Priyanka1.PNG)
-
+2. Click on "Search & Reporting". Where you can see all options
+![](Priyanka2.PNG)
+3. You can see Create Table view on right hand side top corner When you click on the datset on header as shown below.
+![](Priyanka3.PNG)
+4. You can see the index view in left handed side. You can select multiple indexes.
+![](Priyanka4.PNG)
 ### Chetan Kudaravalli
 ![Chetan Kudaravalli](./Assets/dp.jpeg "chetan")
 
