@@ -8,7 +8,6 @@ Sub topic
 
   1. System performance using splunk.
   2. Search operations.
-<<<<<<< HEAD
 
   #### Pre-requisites:
 
@@ -109,16 +108,6 @@ A video with step by step procedure of this section is availabe at [https://yout
 1. Download splunk -> [https://www.splunk.com/](https://www.splunk.com/)
 2. Data used in this section -> [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
 
-=======
--
--
--
--
--
--
--
--
->>>>>>> 10e11bd56077ade31fcf73f500e89a9b030b7a68
 
 ### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
