@@ -30,21 +30,21 @@ Sub topic
 
   ##### Steps: 
   1. Login to the splunk application and navigate to the ```Data Inputs``` link in the settings section.
-  ![Data Input](./Assets/bharat/dataInput.jpg "Data Input")
+  ![Data Input](./Assets/bharat/dataInput.JPG "Data Input")
 
   2. Select the *Files and Directories* as the type.
-  ![Files And Directories](./Assets/bharat/filesNDir.jpg "Files and directories")
+  ![Files And Directories](./Assets/bharat/filesNDir.JPG "Files and directories")
 
   3. Create a new Local File and Directory and select *Local windows host monitoring* in the left pane fill the required fields.
   ```Collection name: Provide a unique name,```
   ```Event Types: Select the event types you want to monitor,```
   ```Interval: Time in seconds```
-![Local Windows host monitoring](./Assets/bharat/localHost.jpg "Local windows host monitoring")
+![Local Windows host monitoring](./Assets/bharat/localHost.JPG "Local windows host monitoring")
 
 4. Select the app context based on the task you are performing. 
 
 5. Review and submit. Once done you will be provided with this screen on success.
-![Review](./Assets/bharat/review.jpg "Review")
+![Review](./Assets/bharat/review.JPG "Review")
 
 ##### Viewing our logs 
 
@@ -58,30 +58,48 @@ Sub topic
 
   This query can be run on multiple time stamps like data within a week, day, hour etc.
 
-  ![Search](./Assets/bharat/search.jpg)
+  ![Search](./Assets/bharat/search.JPG)
 
 - Dashboard of the system:
 
     Splunk provides a pre built dashboard for the system performance monitoring. This is availabe in the home screen of the application.
-    ![Dashboard](./Assets/bharat/dashboard.jpg)
-
+    ![Dashboard](./Assets/bharat/dashboard.JPG)
+    
 
 #### Search Operations:
 
-  
-    
+Firstly lets add some data into splunk for performing search operations. 
 
+The data which splunk provided earlier in this tutorial. To add the data into splunk,
+1. Go to the add data link and select upload files.
+2. Select the tutorials.zip file from the file explorer and click next.
 
+3. In the next window, select the host option to *Regular expression on path* and give the regular expression as ```\\(.*)\/```. 
 
+![Reqular expression](./Assets/bharat/reg.JPG)
 
--
--
--
--
--
--
--
--
+4. Review and submit.
+
+Once the file is uploaded, Navigate to the home page and click on *Search & Reporting*
+
+##### Searching using the search tab
+
+Lets search for the logs with buttercutgames that failed. To do so enter the below query in the search field and select a timestamp of your wish and click on search icon.
+
+```buttercupgames (error OR fail* OR severe)```
+
+![buttercup search](./Assets/bharat/searchBC.JPG)
+
+Now lets try to visualize some data from the same dataset with a different query. Enter the query below and select a timestamp of your wish and click on search.
+
+```sourcetype=access_* status=200 action=purchase | top categoryId```
+
+Go to the visualization tab and select a visual format or your wish. A pie chart and a bar graph of the result is given below.
+![Pie chart](./Assets/bharat/pie.JPG)
+![Bar graph](./Assets/bharat/bar.JPG)
+
+This way you can perform search operations on your data and visualize it as per your needs for a better understanding.  
+
 
 ### Bhavya Deepthi Gorrepati
 ![Bhavya](./Assets/deepu.jpg "Bhavya")
