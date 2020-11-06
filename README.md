@@ -8,6 +8,14 @@ Sub topic
 
   1. System performance using splunk.
   2. Search operations.
+
+  #### Pre-requisites:
+
+  1. This is a windows based demo and requires splunk tool to be installed on you local windows machine. 
+
+  2. Getting the tutorial data - The data is availabe at in the *Download the tutorial data files* section at [https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements](https://docs.splunk.com/Documentation/Splunk/8.1.0/SearchTutorial/Systemrequirements)
+
+
 -
 -
 -
