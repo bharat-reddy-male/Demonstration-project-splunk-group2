@@ -173,6 +173,7 @@ Another way to add panel is while searching and saving immediately like below.
 #### Command: 
 ```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search coomand used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
 
+## Demo: The following is the link for the  demo Video [Demo](Bhavya/SplunkDemo_Bhavya.mp4)
 
 ## References
 The following link [External Link](https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial) is the only reference I utilized to learn and perform the demo.
