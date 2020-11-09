@@ -225,7 +225,7 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 2. when you go click on search and reporting, you will get a search bar for using transforming commands.</br>
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/search.PNG)
 
-3. My Video Link for Splunk Demo: 
+
 
 ## Commands
 
@@ -240,6 +240,9 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 ![](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/blob/main/chetan/stat.PNG)
 * Command for rare transforming command``` index="_internal" sourcetype=splunkd | rare max_size_kb ```</br>
 * Command for top transforming command``` index="_internal" sourcetype=splunkd | top max_size_kb ```
+
+## Demo
+* [Demo Link](https://use.vg/aa0zEo)
 
 ## References
 * [splunk Demo](https://docs.splunk.com/Splexicon:Transformingcommand)
