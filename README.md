@@ -115,10 +115,10 @@ A video with step by step procedure of this section is availabe at [https://yout
 Sub Topics
 
  1. Create Dashboards.
- 2. Analysing Reports.
+ 2. Analyzing Reports.
   
 ## Prerequisites
-First step required to work on Splunk is to download the free trial version of splunk software on the local machine depending on the type of OS. I am using Windows 64 bit. And also there are two types of splunk software based on licencing called as " Splunk Cloud" and " Splunk Enterprise". I worked on Splunk Enterprise as its licence lasts for 60 days. So this can be downloaded from [Splunk Website](https://www.splunk.com/).
+First step required to work on Splunk is to download the free trial version of splunk software on the local machine depending on the type of OS. I am using Windows 64 bit. And also there are two types of splunk software based on licensing called as " Splunk Cloud" and " Splunk Enterprise". I worked on Splunk Enterprise as its license lasts for 60 days. So this can be downloaded from [Splunk Website](https://www.splunk.com/).
 
 Another basic necessity is to have the data required to perform the demo. The data can be found at [Data files](https://github.com/bharat-reddy-male/Demonstration-project-splunk-group2/tree/main/Bhavya).
 
@@ -139,7 +139,7 @@ The basic idea is when we search the data, it can be saved in the form of report
 ![](Bhavya/Images/HomeScreen.JPG)
 2. Search Bar Screen
 ![](Bhavya/Images/SearchBar.JPG)
-3. Seach query with Results in Statistics
+3. Search query with Results in Statistics
 ![](Bhavya/Images/SearchResult.JPG)
 4. Results in Visualization format
 ![](Bhavya/Images/Search_Visualization.JPG)
@@ -147,7 +147,7 @@ The basic idea is when we search the data, it can be saved in the form of report
 ![](Bhavya/Images/Reports_list.JPG)
 
 #### Commands Used to create the reports:
-1. In the command ```sourcetype=access_* |stats values(price) AS Price BY productName |rename productName AS "Product Name"``` source type specifies which type of file to access for searching, Piple character(|) takes the result of left value as input to the right value, stats is a transform command that displays output in statistics and visualization format, AS is used as alias, rename is used to rename the column names. On a whole the above command displays the list of product names and prices in the input data file.
+1. In the command ```sourcetype=access_* |stats values(price) AS Price BY productName |rename productName AS "Product Name"``` source type specifies which type of file to access for searching, Pipe character(|) takes the result of left value as input to the right value, stats is a transform command that displays output in statistics and visualization format, AS is used as alias, rename is used to rename the column names. On a whole the above command displays the list of product names and prices in the input data file.
 
 2. Other command used for practice is 
 ```sourcetype=access_* status=200 action=purchase [search sourcetype=access_* status=200 action=purchase | top limit=1 clientip | table clientip] | stats count AS "Total Purchased", dc(productId) AS "Total Products", values(productId) AS "Product IDs" BY clientip | rename clientip AS "VIP Customer"```. This command utilizes the sub search process using []. This command displays the VIP Customer Ip address along with count of purchases made, count of different products bought and product Id's.
@@ -156,7 +156,7 @@ The basic idea is when we search the data, it can be saved in the form of report
 ### Create Dashboards
 Dashboards are views that are made up of panels. The panels can contain modules such as search boxes, fields, charts, tables, and lists. Dashboard panels are usually connected to reports.
 After creating a search visualization or saving a report, we can add it to a new or existing dashboard. There is also a Dashboard Editor that we can use to create and edit dashboards. The Dashboard Editor is useful when we have a set of saved reports that we want to quickly add to a dashboard.
-1. Click on the Dashboard menu in the Home Page and Create a New Dashboard by clciking on the create button by providing a title and description.
+1. Click on the Dashboard menu in the Home Page and Create a New Dashboard by clicking on the create button by providing a title and description.
 ![](Bhavya/Images/CreateDashboard.JPG)
 2. In the Edit button click on Edit Panel option from the menu
 ![](Bhavya/Images/Dashboard.JPG)
@@ -171,7 +171,7 @@ Another way to add panel is while searching and saving immediately like below.
 ![](Bhavya/Images/Add_dashboardPanel.JPG)
 
 #### Command: 
-```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search coomand used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
+```sourcetype=access_* status=200 action=purchase | top categoryId``` is the search command used to search and add the result as a dashboard panel. Here this command searches the source type as access files, with status as 200 called 'Success' and action type as purchase with item categories purchased at most.
 
 ## Demo: 
 The following is the link for the  demo Video [Demo](Bhavya/SplunkDemo_Bhavya.mp4)
