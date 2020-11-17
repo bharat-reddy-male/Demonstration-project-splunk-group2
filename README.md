@@ -315,6 +315,10 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 
 4. Select on any field and add it to your search bar to make the searching more efficient.
 
+
+### Demo
+[Demo link](https://app.vidgrid.com/view/LwQUsbv2EHj7/?sr=NFWRw3)
+
 ### References: 
 
 Subtopics found at  -->[Splunk - Demo](https://www.splunk.com/en_us/resources/videos/splunk-web-demo.html)
