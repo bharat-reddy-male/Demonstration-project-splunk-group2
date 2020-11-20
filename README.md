@@ -203,6 +203,9 @@ The following link [External Link](https://docs.splunk.com/Documentation/Splunk/
 9. Click on the summarize. You can see the full details of Table
 ![](Priyanka10.PNG)
 
+### Demo
+[Demo link](https://app.vidgrid.com/view/ABcVaB7OwndN/?sr=X6D04B)
+
 #### References
 1. You can download Splunk at https://www.splunk.com/en_us/download/splunk-enterprise.html
 2. Followed the video for creation of datasets https://www.youtube.com/watch?v=vTMn4nkAWYo&t=568s&ab_channel=unofficialsplunk
